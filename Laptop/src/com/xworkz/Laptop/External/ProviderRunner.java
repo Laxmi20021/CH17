@@ -37,7 +37,10 @@ BookingProvider bookingProvider=new BookingProvider("jashb", "nsbdsvdv");
         System.out.println("..................................");
         LenovoProvider lenovoProvider1 =new LenovoProvider("snbd ", "skjehg", 25);
         LenovoProvider lenovoProvider2 =new LenovoProvider("jawh", "jashdbv", 25);
+<<<<<<< HEAD
         LenovoProvider lenovoProvider3 =new LenovoProvider("Laxmi", "Lakshmi", 35);
+=======
+>>>>>>> 550fa553cfbb1acd013df1c37a3bea4f2fc928ec
         boolean provider1=lenovoProvider1.equals(lenovoProvider2);
         System.out.println(provider1);
         System.out.println(lenovoProvider1.toString());
