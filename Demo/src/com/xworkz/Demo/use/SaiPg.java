@@ -7,9 +7,10 @@ public class SaiPg {
 	private PGRule pGRule;
 
 	public void setPG(PGRule pGRule) {
-		this.pGRule=pGRule;
+		this.pGRule = pGRule;
 
 	}
+
 	public void check() {
 		if (pGRule != null) {
 			System.out.println("pg rule is not null");

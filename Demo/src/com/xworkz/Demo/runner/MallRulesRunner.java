@@ -10,7 +10,7 @@ public class MallRulesRunner {
 
 		MallRules mallRule=new MallOfAsia();
 		OrionMall orionMall=new OrionMall(mallRule);
-		orionMall.Choiceclothes("skjehbh");
+		orionMall.Choiceclothes("Dairy Milk");
 		
 	}
 
