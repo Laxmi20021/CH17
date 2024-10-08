@@ -10,7 +10,7 @@ public class Printer {
 		return this.print;
 	}
 	
-	//giveBrand,getBrand,setBrand......etc
+	//giveBrand,getBrand,setBrand......etc2
 	public String getBrand()
 	{
 		return this.brand;

@@ -1,10 +1,23 @@
 package com.xworkz.events.service;
 
+import com.xworkz.events.exception.InvalidAgeException;
 import com.xworkz.events.exception.InvalidNameException;
 
+//
 public class CustomerServiceImpl {
 	
-	public void save(String name)throws InvalidNameException
+	String repository;
+	
+	
+	public CustomerServiceImpl() throws ClassNotFoundException {
+		if(repository==null) {
+			
+		
+		throw new ClassNotFoundException();
+		}
+	}
+	
+	public void save(String name)throws InvalidNameException //Exception or InvalidNameException
 	{
 		//name:"Narendra Modi: or null or ""
 		
@@ -17,7 +30,18 @@ public class CustomerServiceImpl {
 			throw new InvalidNameException(); //error
 		}
 		//contiune execution
-		System.out.println("valid data, will contune the execution");
+		System.out.println("valid data, will continue the execution");
+	}
+	
+	public void checkAge(int Age)
+	{
+		if(Age>0 && Age <=150)
+		{
+			System.out.println("valid Age........");
+		}
+		else { throw new InvalidAgeException(); //RuntimeException
+		
+		}
 	}
 
 }
